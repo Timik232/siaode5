@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="siaode2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="T:/projectc++/siaode5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="T:/projectc++/siaode5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="siaode5">
+				<Option output="T:/projectc++/siaode5/cmake-build-debug/siaode5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="T:/projectc++/siaode5/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/mingw/lib/gcc/mingw32/6.3.0/../../../../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 siaode5"/>
+					<CompileFile command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="siaode5/fast">
+				<Option output="T:/projectc++/siaode5/cmake-build-debug/siaode5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="T:/projectc++/siaode5/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="t:\mingw-w64-v9.0.0\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/mingw/lib/gcc/mingw32/6.3.0/../../../../include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 siaode5/fast"/>
+					<CompileFile command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="T:/projectc++/siaode5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="T:/mingw-w64-v9.0.0/bin/mingw32-make.exe -f &quot;T:/projectc++/siaode5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="T:/projectc++/siaode5/siaode5/siaode5.cpp">
+			<Option target="siaode5"/>
+		</Unit>
+		<Unit filename="T:/projectc++/siaode5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

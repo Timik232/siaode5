@@ -25,7 +25,7 @@ void InsertNode(Node* &list, int n)
     N1->next = list;
     list = N1;
 }
-void PrintNode(Node* &list)
+void PrintNode(Node* list) //удалить значение ключа из списка
 {
     while (list)
     {
@@ -35,8 +35,13 @@ void PrintNode(Node* &list)
 }
 void ChangeI(vector <Node*> &arr, Node* &list, int k, int n)
 {
-    int i = list->key % n;
-    arr[i]->key = k;
+    int i = k % n;
+    if (arr.size()<i)
+        while (arr.size()<i)
+        {
+            arr.push_back(nullptr);
+        }
+    InsertNode(arr[i], k);
 }
 void HandInsert(vector <Node*> &arr, Node* &list)//если вдруг нужно будет вводить значения вручную
 {
@@ -63,10 +68,47 @@ void HandInsert(vector <Node*> &arr, Node* &list)//если вдруг нужн�
         arr.push_back(list);
     }
 }
-void FindKey(Node* list)
+void DeleteKey(Node* list, int k) //удалить элемент списка по ключу
 {
+    Node* pre = nullptr;
+    Node* post = list;
+    while(list)
+    {
+        if (list->key == k)
+        {
+            post = post->next;
+            if (pre)
+            {
+                delete pre->next;
+                pre->next = post;
+            }
+            else
+            {
+                delete list;
+                list = post;
+            }
+            break;
+        }
+        pre = list;
+        post = post->next;
+        list = list->next;
+    }
+}
+Node* FindKey(vector <Node*> arr, Node* list, int k) //нахождение по ключу
+{
+    for (int i = 0; i < arr.size(); i++)
+    {
+        list = arr[i];
+        while(list)
+        {
+            if (list->key == k)
+                return list;
+            list = list->next;
+        }
+    }
 
 }
+
 int main()
 {
     vector <Node*> arr;
@@ -75,7 +117,8 @@ int main()
     InsertNode(list, 1);
     InsertNode(list, 2);
     InsertNode(list, 3);
-    PrintNode(list);
+    cout << "Original lists\n";
+    //PrintNode(list);
     arr.push_back(list);
     list = new Node(7);
     InsertNode(list, 4);
@@ -85,10 +128,16 @@ int main()
     PrintNode(arr[0]);
     cout << endl;
     PrintNode(arr[1]);
-
-    
-    
- 
-
+    cout << "Found key: " << FindKey(arr,list,2)->key << endl;
+    DeleteKey(arr[0], 2);
+    cout << "After deleting: \n";
+    PrintNode(arr[0]);
+    ChangeI(arr, list, 9, 2);
+    cout << "\nAfter inserting\n";
+    for (int i = 0; i < arr.size(); i++)
+    {
+        PrintNode(arr[i]);
+        cout << endl;
+    }
 }
 
